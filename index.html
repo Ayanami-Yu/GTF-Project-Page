@@ -192,74 +192,101 @@
   <!--End paper poster -->
 
 
-
   <!-- Image grid -->
   <section class="hero is-small is-light">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column image-grid-width">
-            <h2 class="title is-3">Comparisons on Image Editing</h2>
-            <div class="content has-text-justified" align="center">
-              <td colspan="3">
-                <p style="margin-top: -12px;text-align: center;">
-                  From top to bottom: Semantic addition, semantic removal, style transfer
-              </td>
-            </div>
-            <!-- First row -->
-            <div id="results-carousel" class="carousel results-carousel" align="center">
-              <!-- First carousel page -->
-              <div class="item">
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>Original Image</caption>
-                  <img src="images/src/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>P2P</caption>
-                  <img src="images/p2p/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>MasaCtrl</caption>
-                  <img src="images/masactrl/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>MDP</caption>
-                  <img src="images/mdp/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>CG</caption>
-                  <img src="images/cg/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>LEDITS++</caption>
-                  <img src="images/ledits_pp/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>Ours + SD</caption>
-                  <img src="images/sd/dog_collar.png" alt="" />
-                </div>
-                </br>
-                <div style="font-size: xx-large;">+ <text class="prompt">"wearing a red dog collar"</text>
-                </div>
+        <div class="is-centered has-text-centered">
+          <h2 class="title is-3">Comparisons on Image Editing</h2>
+          <div class="content has-text-justified" align="center">
+            <td colspan="3">
+              <p style="margin-top: -12px;text-align: center;">
+                From top to bottom: Semantic addition, semantic removal, style transfer
+            </td>
+          </div>
+          <div id="results-carousel" class="carousel results-carousel">
+            <!-- First page -->
+            <div class="item">
+              <img src="images/dog_collar.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"wearing a red dog collar"</text>
               </div>
-              <!-- Second carousel page -->
-
+              <img src="images/oil_bowl_olive.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">- <text class="prompt">"olive on table"</text>
+              </div>
+              <img src="images/woman_flowers_stained_glass.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"a stained-glass window"</text>
+              </div>
+            </div>
+            <!-- Second page -->
+            <div class="item">
+              <img src="images/man_read_heart.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"painting of a heart"</text>
+              </div>
+              <img src="images/church_fences.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">- <text class="prompt">"fences"</text>
+              </div>
+              <img src="images/car_stained_glass.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"stained-glass window"</text>
+              </div>
+            </div>
+            <!-- Third page -->
+            <div class="item">
+              <img src="images/campfire_kids.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"with some kids playing around"</text>
+              </div>
+              <img src="images/cheetah_grassy.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">- <text class="prompt">"grassy"</text>
+              </div>
+              <img src="images/corgi_painting.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"sunset, oil painting"</text>
+              </div>
+            </div>
+            <!-- Fourth page -->
+            <div class="item">
+              <img src="images/car_helicopter.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"with a helicopter following"</text>
+              </div>
+              <img src="images/lady_hair_wrinkles.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">- <text class="prompt">"white hair and deep wrinkles"</text>
+              </div>
+              <img src="images/cat_sketch.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"a sketch"</text>
+              </div>
+            </div>
+            <!-- Fifth page -->
+            <div class="item">
+              <img src="images/robot_rain.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"heavy raining futuristic Tokyo rooftop cyberpunk
+                  night"</text>
+              </div>
+              <img src="images/woman_traditional_flowers.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">- <text class="prompt">"holding flowers"</text>
+              </div>
+              <img src="images/woman_post_impressionism.png" alt="" />
+              </br>
+              <div style="font-size: x-large;">+ <text class="prompt">"post-impressionism style"</text>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-
-
-
-
-
-
-
-
-
+  <!-- End image grid -->
 
 
   <!-- Video grid-->
@@ -267,91 +294,7 @@
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
-
           <div class="column custom-width">
-
-            <h2 class="title is-3">Comparisons on Image Editing</h2>
-            <div class="content has-text-justified" align="center">
-              <td colspan="3">
-                <p style="margin-top: -12px;text-align: center;">
-                  From top to bottom: Semantic addition, semantic removal, style transfer
-              </td>
-            </div>
-
-            <!-- First row -->
-            <div id="results-carousel" class="carousel results-carousel" align="center">
-              <!-- First carousel page -->
-              <div class="item">
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>Original Image</caption>
-                  <img src="images/src/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>P2P</caption>
-                  <img src="images/p2p/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>MasaCtrl</caption>
-                  <img src="images/masactrl/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>MDP</caption>
-                  <img src="images/mdp/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>CG</caption>
-                  <img src="images/cg/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>LEDITS++</caption>
-                  <img src="images/ledits_pp/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>Ours + SD</caption>
-                  <img src="images/sd/dog_collar.png" alt="" />
-                </div>
-                </br>
-                <div style="font-size: xx-large;">+ <text class="prompt">"wearing a red dog collar"</text>
-                </div>
-              </div>
-              <!-- Second carousel page -->
-              <div class="item">
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>Original Image</caption>
-                  <img src="images/src/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>P2P</caption>
-                  <img src="images/p2p/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>MasaCtrl</caption>
-                  <img src="images/masactrl/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>MDP</caption>
-                  <img src="images/mdp/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>CG</caption>
-                  <img src="images/cg/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>LEDITS++</caption>
-                  <img src="images/ledits_pp/dog_collar.png" alt="" />
-                </div>
-                <div class="image-wrapper" style="width: 150px;">
-                  <caption>Ours + SD</caption>
-                  <img src="images/sd/dog_collar.png" alt="" />
-                </div>
-                </br>
-                <div style="font-size: xx-large;">+ <text class="prompt">"wearing a red dog collar"</text>
-                </div>
-              </div>
-
-            </div>
-
-
             <h2 class="title is-3">Comparisons on Video Editing</h2>
             <div class="content has-text-justified" align="center">
               <td colspan="3">
@@ -359,7 +302,6 @@
                   From top to bottom: Semantic addition, semantic removal, style transfer
               </td>
             </div>
-
             <!-- First row -->
             <div id="results-carousel" class="carousel results-carousel" align="center">
               <!-- First carousel page -->
@@ -413,7 +355,7 @@
                   </video>
                 </div>
                 </br>
-                <div style="font-size: xx-large;">+ <text class="prompt">"followed by a helicopter"</text>
+                <div style="font-size: x-large;">+ <text class="prompt">"followed by a helicopter"</text>
                 </div>
               </div>
               <!-- Second carousel page -->
@@ -467,7 +409,7 @@
                   </video>
                 </div>
                 </br>
-                <div style="font-size: xx-large;">+ <text class="prompt">"wearing a hat"</text></div>
+                <div style="font-size: x-large;">+ <text class="prompt">"wearing a hat"</text></div>
               </div>
               <!-- Third carousel page -->
               <div class="item item-video2">
@@ -520,7 +462,7 @@
                   </video>
                 </div>
                 </br>
-                <div style="font-size: xx-large;">+ <text class="prompt">"flying butterflies"</text></div>
+                <div style="font-size: x-large;">+ <text class="prompt">"flying butterflies"</text></div>
               </div>
             </div>
 
@@ -577,7 +519,7 @@
                   </video>
                 </div>
                 </br>
-                <div style="font-size: xx-large;">- <text class="prompt">"a field of dandelions"</text>
+                <div style="font-size: x-large;">- <text class="prompt">"a field of dandelions"</text>
                 </div>
               </div>
               <!-- Second carousel page -->
@@ -631,7 +573,7 @@
                   </video>
                 </div>
                 </br>
-                <div style="font-size: xx-large;">- <text class="prompt">"a guitar"</text></div>
+                <div style="font-size: x-large;">- <text class="prompt">"a guitar"</text></div>
               </div>
               <!-- Third carousel page -->
               <div class="item item-video2">
@@ -684,7 +626,7 @@
                   </video>
                 </div>
                 </br>
-                <div style="font-size: xx-large;">- <text class="prompt">"sunglasses"</text></div>
+                <div style="font-size: x-large;">- <text class="prompt">"sunglasses"</text></div>
               </div>
             </div>
 
@@ -741,7 +683,7 @@
                   </video>
                 </div>
                 </br>
-                <div style="font-size: xx-large;">+ <text class="prompt">"cyberpunk style"</text></div>
+                <div style="font-size: x-large;">+ <text class="prompt">"cyberpunk style"</text></div>
               </div>
               <!-- Second carousel page -->
               <div class="item item-video2">
@@ -794,7 +736,7 @@
                   </video>
                 </div>
                 </br>
-                <div style="font-size: xx-large;">+ <text class="prompt">"a cyberpunk cityscape"</text>
+                <div style="font-size: x-large;">+ <text class="prompt">"a cyberpunk cityscape"</text>
                 </div>
               </div>
               <!-- Third carousel page -->
@@ -848,11 +790,10 @@
                   </video>
                 </div>
                 </br>
-                <div style="font-size: xx-large;">+ <text class="prompt">"pop art"</text></div>
+                <div style="font-size: x-large;">+ <text class="prompt">"pop art"</text></div>
               </div>
             </div>
             <!-- End third row -->
-
           </div>
         </div>
       </div>
@@ -861,21 +802,226 @@
 
 
 
+  <!-- 3D grid -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column custom-width-3d">
+            <h2 class="title is-3">Visual Results of 3D Editing</h2>
+            <div class="content has-text-justified" align="center">
+              <td colspan="3">
+                <p style="margin-top: -12px;text-align: center;">
+                  Left: RGB display; Right: Depth display
+              </td>
+            </div>
+            <!-- First row -->
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <!-- First carousel page -->
+              <div class="item item-3D1">
+                <div class="video-wrapper width-3d">
+                  <caption>Original Object</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/fox_rock_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/fox_rock_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <caption>Ours + LucidDreamer</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/fox_rock_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/fox_rock_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: x-large;">+ <text class="prompt">"on rock, wearing VR goggles"</text>
+                </div>
+              </div>
+              <!-- Second carousel page -->
+              <div class="item item-3D2">
+                <div class="video-wrapper width-3d">
+                  <caption>Original Object</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/plant_pot_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/plant_pot_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <caption>Ours + LucidDreamer</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/plant_pot_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/plant_pot_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: x-large;">+ <text class="prompt">"on gold plot with glass lid"</text>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second row -->
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <!-- First carousel page -->
+              <div class="item item-3D3">
+                <div class="video-wrapper width-3d">
+                  <caption>Original Object</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/cat_armor_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/car_armor_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <caption>Ours + LucidDreamer</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/cat_armor_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/cat_armor_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: x-large;">- <text class="prompt">"an armor"</text>
+                </div>
+              </div>
+              <!-- Second carousel page -->
+              <div class="item item-3D4">
+                <div class="video-wrapper width-3d">
+                  <caption>Original Object</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/dog_costume_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/dog_costume_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <caption>Ours + LucidDreamer</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/dog_costume_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/dog_costume_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: x-large;">+ <text class="prompt">"wearing halloween costume"</text>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third row -->
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <!-- First carousel page -->
+              <div class="item item-3D3">
+                <div class="video-wrapper width-3d">
+                  <caption>Original Object</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/cat_low_poly_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/cat_low_poly_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <caption>Ours + LucidDreamer</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/cat_low_poly_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/cat_low_poly_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: x-large;">+ <text class="prompt">"low-poly game art style"</text>
+                </div>
+              </div>
+              <!-- Second carousel page -->
+              <div class="item item-3D4">
+                <div class="video-wrapper width-3d">
+                  <caption>Original Object</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/motor_flames_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/src/motor_flames_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <caption>Ours + LucidDreamer</caption>
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/motor_flames_rgb.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper width-3d">
+                  <video preload="auto" poster="" id="" autoplay controls muted loop width="150px">
+                    <source src="3d/tgt/motor_flames_depth.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: x-large;">+ <text class="prompt">"flames"</text>
+                </div>
+              </div>
+            </div>
+            <!-- End third row -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{li2023vidtome,
-    title={VidToMe: Video Token Merging for Zero-Shot Video Editing},
-    author={Li, Xirui and Ma, Chao and Yang, Xiaokang and Yang, Ming-Hsuan},
-    booktitle={arXiv preprint arxiv:2312.10656},
-    year={2023}
-    }</code></pre>
+      <pre><code>
+        @misc{hong2025generalizedtrainingfreetextguidedsemantic,
+          title={Towards Generalized and Training-Free Text-Guided Semantic Manipulation}, 
+          author={Yu Hong and Xiao Cai and Pengpeng Zeng and Shuai Zhang and Jingkuan Song and Lianli Gao and Heng Tao Shen},
+          year={2025},
+          eprint={2504.17269},
+          archivePrefix={arXiv},
+          primaryClass={cs.CV},
+          url={https://arxiv.org/abs/2504.17269}, 
+        }
+      </code></pre>
     </div>
   </section>
   <!--End BibTex citation -->
 
-  <section class="hero is-small">
+  <!-- <section class="hero is-small">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered has-text-centered">
@@ -895,7 +1041,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <footer class="footer">
     <div class="container">
