@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG" />
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG" />
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <title>GTF: Towards Generalized and Training-Free Text-Guided Semantic Manipulation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/github.png" />
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+
+  <link rel="stylesheet" href="static/css/bulma.min.css" />
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">GTF: Towards Generalized and Training-Free Text-Guided Semantic
+              Manipulation</h1>
+            <!-- <div class="is-size-5 publication-authors">
+              <span class="author-block">ACM Multimedia 2025</span>
+            </div> -->
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="AUTHOR PERSONAL LINK" target="_blank">Yu Hong</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="AUTHOR PERSONAL LINK" target="_blank">Xiao Cai</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="AUTHOR PERSONAL LINK" target="_blank">Pengpeng Zeng</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="AUTHOR PERSONAL LINK" target="_blank">Shuai Zhang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="AUTHOR PERSONAL LINK" target="_blank">Jingkuan Song</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="AUTHOR PERSONAL LINK" target="_blank">Lianli Gao</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="AUTHOR PERSONAL LINK" target="_blank">Heng Tao Shen</a><sup>2</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup><a href="LINK" target="_blank">University of Electronic Science and Technology of China</a>,
+              </span>
+              <span class="author-block">
+                <sup>2</sup><a href="LINK" target="_blank">Tongji University</a>
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href='https://www.arxiv.org/pdf/2504.17269' target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://www.arxiv.org/abs/2504.17269" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Text-guided semantic manipulation refers to semantically editing an image generated from a source prompt
+              to match a target prompt, enabling the desired semantic changes (e.g., addition, removal, and style
+              transfer) while preserving irrelevant contents. With the powerful generative capabilities of the diffusion
+              model, the task has shown the potential to generate high-fidelity visual content. Nevertheless, existing
+              methods either typically require time-consuming fine-tuning (inefficient), fail to accomplish multiple
+              semantic manipulations (poorly extensible), and/or lack support for different modality tasks (limited
+              generalizability). Upon further investigation, we find that the geometric properties of noises in the
+              diffusion model are strongly correlated with the semantic changes. Motivated by this, we propose a novel
+              <b><i>GTF</i></b> for text-guided semantic manipulation, which has the following attractive capabilities:
+              1) <b>Generalized</b>: our <i>GTF</i> supports multiple semantic manipulations (e.g., addition, removal,
+              and style transfer) and can be seamlessly integrated into all diffusion-based methods (i.e.,
+              Plug-and-play) across different modalities (i.e., modality-agnostic); and 2) <b>Training-free</b>:
+              <i>GTF</i> produces high-fidelity results via simply controlling the geometric relationship between noises
+              without tuning or optimization. Our extensive experiments demonstrate the efficacy of our approach,
+              highlighting its potential to advance the state-of-the-art in semantics manipulation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- Paper poster -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3">Method</h2>
+            <div class="content has-text-justified">
+              <div>
+                <td colspan="3"><img src="pics/pipeline.png" alt="" width="1000" /></td>
+              </div>
+              <div class="content has-text-justified">
+                <p>
+                  Given a pair of source and target prompts, we aim to perform semantic addition or removal by combining
+                  their corresponding noise predictions. Specifically, at each diffusion step, we first predict the
+                  unconditional noise, followed by two conditional noise predictions based on the source and target
+                  prompts, respectively. Depending on the manipulation type (addition or removal), we apply our
+                  algorithm to combine these noises and compute the final guidance noise for the current step. This
+                  guidance is applied iteratively at every denoising step, progressively steering the generation toward
+                  the edited result.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End paper poster -->
+
+
+
+  <!-- Image grid -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column image-grid-width">
+            <h2 class="title is-3">Comparisons on Image Editing</h2>
+            <div class="content has-text-justified" align="center">
+              <td colspan="3">
+                <p style="margin-top: -12px;text-align: center;">
+                  From top to bottom: Semantic addition, semantic removal, style transfer
+              </td>
+            </div>
+            <!-- First row -->
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <!-- First carousel page -->
+              <div class="item">
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>Original Image</caption>
+                  <img src="images/src/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>P2P</caption>
+                  <img src="images/p2p/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>MasaCtrl</caption>
+                  <img src="images/masactrl/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>MDP</caption>
+                  <img src="images/mdp/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>CG</caption>
+                  <img src="images/cg/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>LEDITS++</caption>
+                  <img src="images/ledits_pp/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>Ours + SD</caption>
+                  <img src="images/sd/dog_collar.png" alt="" />
+                </div>
+                </br>
+                <div style="font-size: xx-large;">+ <text class="prompt">"wearing a red dog collar"</text>
+                </div>
+              </div>
+              <!-- Second carousel page -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Video grid-->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+
+          <div class="column custom-width">
+
+            <h2 class="title is-3">Comparisons on Image Editing</h2>
+            <div class="content has-text-justified" align="center">
+              <td colspan="3">
+                <p style="margin-top: -12px;text-align: center;">
+                  From top to bottom: Semantic addition, semantic removal, style transfer
+              </td>
+            </div>
+
+            <!-- First row -->
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <!-- First carousel page -->
+              <div class="item">
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>Original Image</caption>
+                  <img src="images/src/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>P2P</caption>
+                  <img src="images/p2p/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>MasaCtrl</caption>
+                  <img src="images/masactrl/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>MDP</caption>
+                  <img src="images/mdp/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>CG</caption>
+                  <img src="images/cg/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>LEDITS++</caption>
+                  <img src="images/ledits_pp/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>Ours + SD</caption>
+                  <img src="images/sd/dog_collar.png" alt="" />
+                </div>
+                </br>
+                <div style="font-size: xx-large;">+ <text class="prompt">"wearing a red dog collar"</text>
+                </div>
+              </div>
+              <!-- Second carousel page -->
+              <div class="item">
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>Original Image</caption>
+                  <img src="images/src/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>P2P</caption>
+                  <img src="images/p2p/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>MasaCtrl</caption>
+                  <img src="images/masactrl/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>MDP</caption>
+                  <img src="images/mdp/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>CG</caption>
+                  <img src="images/cg/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>LEDITS++</caption>
+                  <img src="images/ledits_pp/dog_collar.png" alt="" />
+                </div>
+                <div class="image-wrapper" style="width: 150px;">
+                  <caption>Ours + SD</caption>
+                  <img src="images/sd/dog_collar.png" alt="" />
+                </div>
+                </br>
+                <div style="font-size: xx-large;">+ <text class="prompt">"wearing a red dog collar"</text>
+                </div>
+              </div>
+
+            </div>
+
+
+            <h2 class="title is-3">Comparisons on Video Editing</h2>
+            <div class="content has-text-justified" align="center">
+              <td colspan="3">
+                <p style="margin-top: -12px;text-align: center;">
+                  From top to bottom: Semantic addition, semantic removal, style transfer
+              </td>
+            </div>
+
+            <!-- First row -->
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <!-- First carousel page -->
+              <div class="item item-video1">
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Original Video</caption>
+                  <video preload="auto" poster="" id="video1" autoplay controls muted loop width="150px">
+                    <source src="videos/src/car_turn.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FateZero</caption>
+                  <video preload="auto" poster="" id="video2" autoplay controls muted loop width="150px">
+                    <source src="videos/fatezero/car_one_helicopter.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FLATTEN</caption>
+                  <video preload="auto" poster="" id="video3" autoplay controls muted loop width="150px">
+                    <source src="videos/flatten/car_one_helicopter.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Rerender-A-Video</caption>
+                  <video preload="auto" poster="" id="video4" autoplay controls muted loop width="150px">
+                    <source src="videos/rav/car_one_helicopter.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>TokenFlow</caption>
+                  <video preload="auto" poster="" id="video5" autoplay controls muted loop width="150px">
+                    <source src="videos/tokenflow/car_one_helicopter.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Vid2Vid-Zero</caption>
+                  <video preload="auto" poster="" id="video6" autoplay controls muted loop width="150px">
+                    <source src="videos/v2v_zero/car_one_helicopter.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>VidToMe</caption>
+                  <video preload="auto" poster="" id="video7" autoplay controls muted loop width="150px">
+                    <source src="videos/vidtome/car_one_helicopter.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Ours + AnimateDiff</caption>
+                  <video preload="auto" poster="" id="video8" autoplay controls muted loop width="150px">
+                    <source src="videos/animatediff/car_one_helicopter.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: xx-large;">+ <text class="prompt">"followed by a helicopter"</text>
+                </div>
+              </div>
+              <!-- Second carousel page -->
+              <div class="item item-video2">
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Original Video</caption>
+                  <video preload="auto" poster="" id="video9" autoplay controls muted loop width="150px">
+                    <source src="videos/src/sakura_matou_hat.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FateZero</caption>
+                  <video preload="auto" poster="" id="video10" autoplay controls muted loop width="150px">
+                    <source src="videos/fatezero/sakura_matou_hat.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FLATTEN</caption>
+                  <video preload="auto" poster="" id="video11" autoplay controls muted loop width="150px">
+                    <source src="videos/flatten/sakura_matou_hat.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Rerender-A-Video</caption>
+                  <video preload="auto" poster="" id="video12" autoplay controls muted loop width="150px">
+                    <source src="videos/rav/sakura_matou_hat.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>TokenFlow</caption>
+                  <video preload="auto" poster="" id="video13" autoplay controls muted loop width="150px">
+                    <source src="videos/tokenflow/sakura_matou_hat.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Vid2Vid-Zero</caption>
+                  <video preload="auto" poster="" id="video14" autoplay controls muted loop width="150px">
+                    <source src="videos/v2v_zero/sakura_matou_hat.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>VidToMe</caption>
+                  <video preload="auto" poster="" id="video15" autoplay controls muted loop width="150px">
+                    <source src="videos/vidtome/sakura_matou_hat.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Ours + AnimateDiff</caption>
+                  <video preload="auto" poster="" id="video16" autoplay controls muted loop width="150px">
+                    <source src="videos/animatediff/sakura_matou_hat.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: xx-large;">+ <text class="prompt">"wearing a hat"</text></div>
+              </div>
+              <!-- Third carousel page -->
+              <div class="item item-video2">
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Original Video</caption>
+                  <video preload="auto" poster="" id="video17" autoplay controls muted loop width="150px">
+                    <source src="videos/src/digital_woman_butterfly.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FateZero</caption>
+                  <video preload="auto" poster="" id="video18" autoplay controls muted loop width="150px">
+                    <source src="videos/fatezero/digital_woman_butterfly.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FLATTEN</caption>
+                  <video preload="auto" poster="" id="video19" autoplay controls muted loop width="150px">
+                    <source src="videos/flatten/digital_woman_butterfly.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Rerender-A-Video</caption>
+                  <video preload="auto" poster="" id="video20" autoplay controls muted loop width="150px">
+                    <source src="videos/rav/digital_woman_butterfly.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>TokenFlow</caption>
+                  <video preload="auto" poster="" id="video21" autoplay controls muted loop width="150px">
+                    <source src="videos/tokenflow/digital_woman_butterfly.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Vid2Vid-Zero</caption>
+                  <video preload="auto" poster="" id="video22" autoplay controls muted loop width="150px">
+                    <source src="videos/v2v_zero/digital_woman_butterfly.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>VidToMe</caption>
+                  <video preload="auto" poster="" id="video23" autoplay controls muted loop width="150px">
+                    <source src="videos/vidtome/digital_woman_butterfly.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Ours + AnimateDiff</caption>
+                  <video preload="auto" poster="" id="video24" autoplay controls muted loop width="150px">
+                    <source src="videos/animatediff/digital_woman_butterfly.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: xx-large;">+ <text class="prompt">"flying butterflies"</text></div>
+              </div>
+            </div>
+
+            <!-- Second row -->
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <!-- First carousel page -->
+              <div class="item item-video1">
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Original Video</caption>
+                  <video preload="auto" poster="" id="video25" autoplay controls muted loop width="150px">
+                    <source src="videos/src/puppy_dandelions.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FateZero</caption>
+                  <video preload="auto" poster="" id="video26" autoplay controls muted loop width="150px">
+                    <source src="videos/fatezero/puppy_dandelions.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FLATTEN</caption>
+                  <video preload="auto" poster="" id="video27" autoplay controls muted loop width="150px">
+                    <source src="videos/flatten/puppy_dandelions.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Rerender-A-Video</caption>
+                  <video preload="auto" poster="" id="video28" autoplay controls muted loop width="150px">
+                    <source src="videos/rav/puppy_dandelions.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>TokenFlow</caption>
+                  <video preload="auto" poster="" id="video29" autoplay controls muted loop width="150px">
+                    <source src="videos/tokenflow/puppy_dandelions.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Vid2Vid-Zero</caption>
+                  <video preload="auto" poster="" id="video30" autoplay controls muted loop width="150px">
+                    <source src="videos/v2v_zero/puppy_dandelions.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>VidToMe</caption>
+                  <video preload="auto" poster="" id="video31" autoplay controls muted loop width="150px">
+                    <source src="videos/vidtome/puppy_dandelions.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Ours + AnimateDiff</caption>
+                  <video preload="auto" poster="" id="video32" autoplay controls muted loop width="150px">
+                    <source src="videos/animatediff/puppy_dandelions.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: xx-large;">- <text class="prompt">"a field of dandelions"</text>
+                </div>
+              </div>
+              <!-- Second carousel page -->
+              <div class="item item-video2">
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Original Video</caption>
+                  <video preload="auto" poster="" id="video33" autoplay controls muted loop width="150px">
+                    <source src="videos/src/panda_guitar.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FateZero</caption>
+                  <video preload="auto" poster="" id="video34" autoplay controls muted loop width="150px">
+                    <source src="videos/fatezero/panda_guitar.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FLATTEN</caption>
+                  <video preload="auto" poster="" id="video35" autoplay controls muted loop width="150px">
+                    <source src="videos/flatten/panda_guitar.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Rerender-A-Video</caption>
+                  <video preload="auto" poster="" id="video36" autoplay controls muted loop width="150px">
+                    <source src="videos/rav/panda_guitar.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>TokenFlow</caption>
+                  <video preload="auto" poster="" id="video37" autoplay controls muted loop width="150px">
+                    <source src="videos/tokenflow/panda_guitar.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Vid2Vid-Zero</caption>
+                  <video preload="auto" poster="" id="video38" autoplay controls muted loop width="150px">
+                    <source src="videos/v2v_zero/panda_guitar.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>VidToMe</caption>
+                  <video preload="auto" poster="" id="video39" autoplay controls muted loop width="150px">
+                    <source src="videos/vidtome/panda_guitar.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Ours + AnimateDiff</caption>
+                  <video preload="auto" poster="" id="video40" autoplay controls muted loop width="150px">
+                    <source src="videos/animatediff/panda_guitar.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: xx-large;">- <text class="prompt">"a guitar"</text></div>
+              </div>
+              <!-- Third carousel page -->
+              <div class="item item-video2">
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Original Video</caption>
+                  <video preload="auto" poster="" id="video41" autoplay controls muted loop width="150px">
+                    <source src="videos/src/woman_car_sunglasses.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FateZero</caption>
+                  <video preload="auto" poster="" id="video42" autoplay controls muted loop width="150px">
+                    <source src="videos/fatezero/woman_car_sunglasses.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FLATTEN</caption>
+                  <video preload="auto" poster="" id="video43" autoplay controls muted loop width="150px">
+                    <source src="videos/flatten/woman_car_sunglasses.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Rerender-A-Video</caption>
+                  <video preload="auto" poster="" id="video44" autoplay controls muted loop width="150px">
+                    <source src="videos/rav/woman_car_sunglasses.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>TokenFlow</caption>
+                  <video preload="auto" poster="" id="video45" autoplay controls muted loop width="150px">
+                    <source src="videos/tokenflow/woman_car_sunglasses.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Vid2Vid-Zero</caption>
+                  <video preload="auto" poster="" id="video46" autoplay controls muted loop width="150px">
+                    <source src="videos/v2v_zero/woman_car_sunglasses.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>VidToMe</caption>
+                  <video preload="auto" poster="" id="video47" autoplay controls muted loop width="150px">
+                    <source src="videos/vidtome/woman_car_sunglasses.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Ours + AnimateDiff</caption>
+                  <video preload="auto" poster="" id="video48" autoplay controls muted loop width="150px">
+                    <source src="videos/animatediff/woman_car_sunglasses.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: xx-large;">- <text class="prompt">"sunglasses"</text></div>
+              </div>
+            </div>
+
+            <!-- Third row -->
+            <div id="results-carousel" class="carousel results-carousel" align="center">
+              <!-- First carousel page -->
+              <div class="item item-video1">
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Original Video</caption>
+                  <video preload="auto" poster="" id="video49" autoplay controls muted loop width="150px">
+                    <source src="videos/src/gwen_book.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FateZero</caption>
+                  <video preload="auto" poster="" id="video50" autoplay controls muted loop width="150px">
+                    <source src="videos/fatezero/gwen_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FLATTEN</caption>
+                  <video preload="auto" poster="" id="video51" autoplay controls muted loop width="150px">
+                    <source src="videos/flatten/gwen_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Rerender-A-Video</caption>
+                  <video preload="auto" poster="" id="video52" autoplay controls muted loop width="150px">
+                    <source src="videos/rav/gwen_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>TokenFlow</caption>
+                  <video preload="auto" poster="" id="video53" autoplay controls muted loop width="150px">
+                    <source src="videos/tokenflow/gwen_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Vid2Vid-Zero</caption>
+                  <video preload="auto" poster="" id="video54" autoplay controls muted loop width="150px">
+                    <source src="videos/v2v_zero/gwen_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>VidToMe</caption>
+                  <video preload="auto" poster="" id="video55" autoplay controls muted loop width="150px">
+                    <source src="videos/vidtome/gwen_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Ours + AnimateDiff</caption>
+                  <video preload="auto" poster="" id="video56" autoplay controls muted loop width="150px">
+                    <source src="videos/animatediff/gwen_book_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: xx-large;">+ <text class="prompt">"cyberpunk style"</text></div>
+              </div>
+              <!-- Second carousel page -->
+              <div class="item item-video2">
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Original Video</caption>
+                  <video preload="auto" poster="" id="video57" autoplay controls muted loop width="150px">
+                    <source src="videos/src/car_street_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FateZero</caption>
+                  <video preload="auto" poster="" id="video58" autoplay controls muted loop width="150px">
+                    <source src="videos/fatezero/car_street_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FLATTEN</caption>
+                  <video preload="auto" poster="" id="video59" autoplay controls muted loop width="150px">
+                    <source src="videos/flatten/car_street_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Rerender-A-Video</caption>
+                  <video preload="auto" poster="" id="video60" autoplay controls muted loop width="150px">
+                    <source src="videos/rav/car_street_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>TokenFlow</caption>
+                  <video preload="auto" poster="" id="video61" autoplay controls muted loop width="150px">
+                    <source src="videos/tokenflow/car_street_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Vid2Vid-Zero</caption>
+                  <video preload="auto" poster="" id="video62" autoplay controls muted loop width="150px">
+                    <source src="videos/v2v_zero/car_street_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>VidToMe</caption>
+                  <video preload="auto" poster="" id="video63" autoplay controls muted loop width="150px">
+                    <source src="videos/vidtome/car_street_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Ours + AnimateDiff</caption>
+                  <video preload="auto" poster="" id="video64" autoplay controls muted loop width="150px">
+                    <source src="videos/animatediff/car_street_cyberpunk.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: xx-large;">+ <text class="prompt">"a cyberpunk cityscape"</text>
+                </div>
+              </div>
+              <!-- Third carousel page -->
+              <div class="item item-video2">
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Original Video</caption>
+                  <video preload="auto" poster="" id="video65" autoplay controls muted loop width="150px">
+                    <source src="videos/src/bird_pop_art.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FateZero</caption>
+                  <video preload="auto" poster="" id="video66" autoplay controls muted loop width="150px">
+                    <source src="videos/fatezero/bird_pop_art.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>FLATTEN</caption>
+                  <video preload="auto" poster="" id="video67" autoplay controls muted loop width="150px">
+                    <source src="videos/flatten/bird_pop_art.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Rerender-A-Video</caption>
+                  <video preload="auto" poster="" id="video68" autoplay controls muted loop width="150px">
+                    <source src="videos/rav/bird_pop_art.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>TokenFlow</caption>
+                  <video preload="auto" poster="" id="video69" autoplay controls muted loop width="150px">
+                    <source src="videos/tokenflow/bird_pop_art.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Vid2Vid-Zero</caption>
+                  <video preload="auto" poster="" id="video70" autoplay controls muted loop width="150px">
+                    <source src="videos/v2v_zero/bird_pop_art.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>VidToMe</caption>
+                  <video preload="auto" poster="" id="video71" autoplay controls muted loop width="150px">
+                    <source src="videos/vidtome/bird_pop_art.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="video-wrapper" style="width: 150px;">
+                  <caption>Ours + AnimateDiff</caption>
+                  <video preload="auto" poster="" id="video72" autoplay controls muted loop width="150px">
+                    <source src="videos/animatediff/bird_pop_art.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </br>
+                <div style="font-size: xx-large;">+ <text class="prompt">"pop art"</text></div>
+              </div>
+            </div>
+            <!-- End third row -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{li2023vidtome,
+    title={VidToMe: Video Token Merging for Zero-Shot Video Editing},
+    author={Li, Xirui and Ma, Chao and Yang, Xiaokang and Yang, Ming-Hsuan},
+    booktitle={arXiv preprint arxiv:2312.10656},
+    year={2023}
+    }</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column image-grid-width">
+            <div class="content has-text-justified">
+              <p>
+                <a name="ref-pnp" id="ref-pnp"></a>
+                [1] Narek Tumanyan, Michal Geyer, et al. “Plug-and-play diffusion features for
+                text-driven image-to-image translation”. In CVPR. 2023.
+                </br>
+                <a name="ref-sd" id="ref-sd"></a>
+                [2] Robin Rombach, Andreas Blattmann, et al. “High-resolution image synthesis with
+                latent diffusion models”. In CVPR. 2022.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was adapted from
+              <a href="https://github.com/diffusion-TokenFlow/diffusion-TokenFlow.github.io" target="_blank">TokenFlow
+                Project Page
+              </a>
+              built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
+                Project Page Template
+              </a>.
+              You are free to borrow the source code of this website, we just ask that you link back to this
+              page in the footer. <br> This website is licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License
+              </a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const videoWrappers = document.querySelectorAll('.video-wrapper');
+
+      videoWrappers.forEach(wrapper => {
+        const defaultVideo = wrapper.querySelector('.default-video');
+        const aspectRatio = defaultVideo.videoWidth / defaultVideo.videoHeight;
+        const height = wrapper.offsetWidth / aspectRatio;
+
+        wrapper.style.height = `${height}px`;
+
+        wrapper.addEventListener('mouseenter', () => {
+          defaultVideo.pause();
+          hoverVideo.play();
+        });
+
+        wrapper.addEventListener('mouseleave', () => {
+          defaultVideo.play();
+          hoverVideo.pause();
+        });
+      });
+    });
+    $(document).ready(function () {
+      var carouselItems = $('.carousel .item');
+      var numItems = carouselItems.length;
+      var numVideos = 5;
+      var currentIndex = 0;
+
+      $('.carousel').on('click', function () {
+        currentIndex++;
+        if (currentIndex + numVideos <= numItems) {
+          carouselItems.removeClass('active');
+          carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
+        } else {
+          currentIndex = 0;
+          carouselItems.removeClass('active');
+          carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
+        }
+      });
+
+      carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
+    });
+  </script>
+
+</body>
+
+</html>
