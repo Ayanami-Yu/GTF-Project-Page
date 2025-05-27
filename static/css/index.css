@@ -113,12 +113,7 @@ body {
 .results-carousel {
   overflow: hidden;
 }
-.custom-width {
-  flex: 0 0 auto;
-  width: 1400px;
-  /* width: 1250px; */
-  /* width:  83.33%; 5/6 of the available width */
-}
+
 .results-carousel .item {
   /* margin: 5px; */
   /* overflow: hidden; */
@@ -245,14 +240,14 @@ body {
   gap: 1px; /* Adjust the gap between videos as needed */
 }
 
-.video-warpper-wide {
+.video-wrapper-wide {
   position: relative;
   width: 350px; /* Set the desired width */
   height: 350px;
   overflow: hidden;
 }
 
-.video-warpper-wide video {
+.video-wrapper-wide video {
   position: absolute;
   top: 0;
   left: 0;
@@ -261,7 +256,7 @@ body {
   object-fit: cover;
 }
 
-.video-warpper-wide .hover-video {
+.video-wrapper-wide .hover-video {
   display: none;
 }
 
@@ -269,7 +264,7 @@ body {
   display: inline-block;
 }
 
-.video-warpper-wide .overlay-text {
+.video-wrapper-wide .overlay-text {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -283,32 +278,32 @@ body {
   text-align: center;
 }
 
-.video-warpper-wide:hover .default-video {
+.video-wrapper-wide:hover .default-video {
   display: none;
 }
 
-.video-warpper-wide:hover .hover-video {
+.video-wrapper-wide:hover .hover-video {
   display: block;
 }
 
-.video-warpper-wide:hover .overlay-text {
+.video-wrapper-wide:hover .overlay-text {
   opacity: 1;
 }
 
 
-.video-warpper-wide video::-webkit-media-controls {
+.video-wrapper-wide video::-webkit-media-controls {
   display: none !important;
 }
 
-.video-warpper-wide video::-webkit-media-controls-enclosure {
+.video-wrapper-wide video::-webkit-media-controls-enclosure {
   display: none !important;
 }
 
-.video-warpper-wide video::-webkit-media-controls-panel {
+.video-wrapper-wide video::-webkit-media-controls-panel {
   display: none !important;
 }
 
-.video-warpper-wide video::-webkit-media-controls-play-button {
+.video-wrapper-wide video::-webkit-media-controls-play-button {
   display: none !important;
 }
 
@@ -317,16 +312,32 @@ body {
   justify-content: center;
 }
 
-.image-grid-width {
+.grid-width-image {
   flex: 0 0 auto;
   width: 1250px;  /* 200px for the buttons on both sides */
 }
 
-.custom-width-3d {
+.grid-width-video {
+  flex: 0 0 auto;
+  width: 1400px;
+  /* width: 1250px; */
+  /* width:  83.33%; 5/6 of the available width */
+}
+
+.grid-width-3d {
   flex: 0 0 auto;
   width: 1400px;
 }
 
 .width-3d {
-  width: 300px;
+  width: 250px;
+}
+
+.grid-width-main-results {
+  flex: 0 0 auto;
+  width: 1100px;
+}
+
+.prompt-size {
+  font-size: large;
 }
